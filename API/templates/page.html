@@ -1,0 +1,321 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="icon" type="image/png" href="/image.png">
+    
+</head>
+
+<style>
+body{
+    background-color: #062863;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mains{
+    float: left;
+    height: 610px;
+    background-color: #313135;
+    margin-left: 45px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    border-radius: 2%;
+    margin-top: 50px;
+}
+
+#main{
+    width: 35%;
+}   
+
+#main2{
+    width: 55%;
+} 
+
+h1{
+    color: #1cedae;
+    font-size: 43px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#linea{
+    background-color:#1cedae ;
+    border-top: 1px solid black;
+    height: 2px;
+    margin: 20px auto 0 auto;
+    width: 77%;
+
+}
+
+#text{
+    font-size: 23px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 25px;
+    color: white;
+}
+
+#inputName{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 60%;
+    height: 30px;
+    background-color: #e6e6e6;
+    border-radius: 2%;
+}
+
+#inputDescription{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 24px;
+    width: 80%;
+    height: 40%;
+    font-size: 20px;
+    border-radius: 2%;
+    background-color: #e6e6e6;
+}
+
+
+#labelName{
+    color: #1cedae;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 25px;
+    
+}
+
+#labelDescription{
+    color: #1cedae;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#submit {
+  min-width: 300px;
+  min-height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #1cedae;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  
+  margin-top: 40px;
+  }
+  
+#submit:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 60px;
+    background-color: #193b75;
+    box-shadow: 5px 2px 20px rgba(79,209,197,.64);
+    
+}
+
+li{ 
+    float: left;
+}
+
+
+li a {
+  display: block;
+  color: #1cedae;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+input[type=checkbox]
+{
+  /* Doble-tamaño Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari y Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+input[type="checkbox"] + label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+    font-size: 28px;
+    margin-left: 10px;
+    
+
+}
+
+input[type="checkbox"]:checked + label {
+    color: #1cedae;
+    height: 95px;
+    width: 95px;
+}
+
+.btn{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+#main3{
+    width: 500px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    float: left;
+}
+nav input{
+    background-color: transparent;
+    border: 0;
+    display: block;
+  color: #1cedae;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+</style>
+
+<body>
+    
+    <!-- MENU -->
+
+    <nav>
+        <ul>
+            <li><a  href="https://docs.google.com/document/d/1DLjr9NAq4Sglw5-y-Me8z_r3U0WiqZrwq5BEd-A4sZo/edit">Documentation</a></li>
+        
+            <li><form method="post" action="/team"><input type="submit" value="Team"></input></form></li>
+        </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <center><h1 > Automated product categorization for e-commerce with AI</h1></center>
+
+
+    <div id="linea"></div>
+
+    <div class="mains"  id="main">
+
+        <p id="text"> Creating relevant tags and categories on products allow e-commerce companies (such as Amazon, Wayfair, eBay in the US, Mercado Libre, Dafiti in Latam, or ASOS.com and Zalando in Europe),
+            and super apps and marketplaces (such as Instacart in the US, Rappi, Frubana, JOKR in Latam) to automatically categorize products whether those are new products uploaded by a user or seller products that need large-scale automated categorization. 
+            Automation on this subject not only saves time and manual effort but creates a taxonomy system that improves the process of a customer finding what they are looking for, improving their conversion metrics, and activating frictionless and engaging shopping experiences. 
+            In this project you will apply natural language processing to create a multi-label system able to classify e-commerce products automatically.</p>
+
+    </div>
+
+    <div class="mains" id="main2">
+
+        {% if load %}
+
+            <form action="/">
+
+                <center> <h1 style="margin-bottom: 55px;font-size: 80px;margin-top: 50px;">THANKS !!!</h1>    </center>
+    
+                <center></a><button  type="submit" id="submit">Homepage</button></center>
+            </form>
+
+        {% elif context == 'None'%}
+
+            <form action="/">
+                <center> <h1 style="margin-bottom: 55px">Sorry we couldn't detect any category for this text.</h1>    </center>
+
+                <center></a><button  type="submit" id="submit">Homepage</button></center>
+            </form>
+
+        {% elif context%}
+
+           <center> <h1 style="margin-bottom: 55px;">Categories</h1>    </center>
+        
+            
+
+            <form id="form" method="POST" action="/feedback">
+               
+
+               {% if context[0] %}
+               <center> <label  class="btn" for="option4">{{context[0]}}</label>
+               <input type="checkbox" name="lista" value="{{context[0]}}"></center>
+                
+               {% endif %}
+
+               {% if context[1] %}
+               <center> <label  class="btn" for="option4">{{context[1]}}</label>
+               <input type="checkbox" name="lista0" value="{{context[1]}}"></center>
+
+               {% endif %}
+               {% if context[2] %}
+               <center> <label  class="btn" for="option4">{{context[2]}}</label>
+               <input type="checkbox" name="lista1" value="{{context[2]}}"></center>
+
+                {% endif %}
+                <input  name="report" style="visibility: hidden;" value="{{ text }}" style="border-radius: 10%" />
+
+                <center> <h1>In order to improve our model, please select the categories to which your product belongs.</h1></center> 
+
+                <center><button type="submit" id="submit">Send</button></center>
+
+            </form>
+
+
+        {% else %}
+  
+        <form method="post" action="/" enctype="multipart/form-data">
+            
+           <center><div id="contName">
+                <label id="labelName" for="">Product name</label>
+                <input id="inputName" name='inputName' type="text">
+            </div></center> 
+
+            <center> <div >
+
+                <label id="labelDescription" for="">Description</label>
+                <input id="inputDescription" name='inputDescription' cols="30" rows="10"></input> 
+               
+            </div></center> 
+
+            <center> 
+                <input id="submit" type="submit" value="Predict">
+            </center> 
+
+        </form>
+        {% endif %}
+
+  
+    
+    </div>
+
+   
+
+    
+</body>
+</html>
