@@ -4,7 +4,7 @@ import view
 # SERVER
 app = Flask(__name__)
 
-# Create secrete key  'The secret key is needed to keep the client-side sessions secure.'
+# Create secrete key 'The secret key is needed to keep the client-side sessions secure.'
 app.secret_key = "secret key"
 
 # Register views

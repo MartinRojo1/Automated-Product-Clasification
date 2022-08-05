@@ -1,4 +1,5 @@
 import mid
+
 from clear.text_normalizer import normalize
 from flask import (
     Blueprint,
@@ -111,33 +112,19 @@ def feedback():
 
     # Get Text
     text = request.form.get('report')
-   
-    # Create dictionary
-    dic = {
-        'Text': text,
-        'Category':report
-        }
     
-    db1 = mysql.connector.connect(host='db',user='db_user',password='root',port=3306, database='proyect') 
-
-    """  text = 'h'
-    report = 'h' """
+    db1 = mysql.connector.connect(host='db',user='root',password='martin',port=3306,database='proyect') 
+  
     mydb = db1.cursor()
-    query = ("insert into databese (Text,allCategory) VALUES (%s,%s)")
+
+    query = ("insert into proyect.PROYECT(Text,allCategory) VALUES (%s,%s)")
+
     var = (str(text),str(report))
+
     mydb.execute(query,var)
-   
+    
     db1.commit()
-    # Open archive
-    arch = open('feedback/feedback','a')
-
-    # Write product 
-    arch.write(str(dic))
-    arch.write("\n")
-
-    # Close archive
-    arch.close()
-        
+    
     return render_template("page.html",load=report)
 
 #############################################################################################################
@@ -148,12 +135,6 @@ def team():
 
 #############################################################################################################
 
-@router.route("/retrain", methods=["GET","POST"])
-def retrain():
-   return render_template('retrain.html')
-
-
-#############################################################################################################
 
 @router.route("/predict", methods=["POST"])
 def predict():
