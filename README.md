@@ -1,4 +1,4 @@
 
-Final Project - Automated product categorization for e-commerce with AI
+Final Project - Automated product categorization for e-commerce with AI.
 
 Creating relevant tags and categories on products allow e-commerce companies (such as Amazon, Wayfair, eBay in the US, Mercado Libre, Dafiti in Latam, or ASOS.com and Zalando in Europe), and super apps and marketplaces (such as Instacart in the US, Rappi, Frubana, JOKR in Latam) to automatically categorize products whether those are new products uploaded by a user or seller products that need large-scale automated categorization. Automation on this subject not only saves time and manual effort but creates a taxonomy system that improves the process of a customer finding what they are looking for, improving their conversion metrics, and activating frictionless and engaging shopping experiences. In this project you will apply natural language processing to create a multi-label system able to classify e-commerce products automatically.
